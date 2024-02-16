@@ -7,11 +7,9 @@
 
 body {
     background-image: url('pinkseasky.png');
-    background-size: cover; /* Adjust as needed */
+    background-size: cover; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* Adjust as needed */
-    /* Additional styling if necessary */
+    background-attachment: fixed;    
 }
 
 .wrapper {
