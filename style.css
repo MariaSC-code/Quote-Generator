@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+body {
+    background-image: url('pinkseasky.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Adjust as needed */
+    /* Additional styling if necessary */
+}
+
+.wrapper {
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%
+}
+
+.container{
+    width: 400px;
+    background-color: rgb(255, 230, 249);
+    padding: 50px, 40px;
+    box-shadow: 0 20px 65px rgb(209, 49, 227);
+    position: relative;
+    border-radius: 8px;
+    text-align: center;    
+}
+
+.container:after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 80%;
+    background-color: rgb(210, 142, 239);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container p {
+    color:rgb(40, 50, 232);
+    margin-top: 100px;
+    line-height: 2;
+    font-size:x-large;
+    font-weight: bold;
+    text-transform:capitalize;
+    padding: 70px;
+}
+
+.container h3 {
+    color: rgb(194, 70, 231);
+    margin: 10px 20px 0 10px;
+    font-size: larger;
+    text-transform: capitalize;
+    text-align: right;
+}
+
+.container button {
+    background-color: rgb(48, 67, 207);
+    margin: 80px 0 20px 0;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(250, 255, 240);
+    cursor: pointer;
+}
+
+#saveBtn {
+    background-color: rgb(183, 68, 232);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(243, 248, 233);
+    cursor: pointer;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
