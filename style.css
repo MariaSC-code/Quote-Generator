@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('/quote.background.jpg');
+    background-color: #090714;
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;    
@@ -22,9 +22,9 @@ body {
 
 .container{
     width: 400px;
-    background-color: rgb(195, 232, 236);
+    background-color: #228b22;
     padding: 50px, 40px;
-    box-shadow: 0 20px 65px rgb(42, 171, 185);
+    box-shadow: 0 20px 65px #ff007f;
     position: relative;
     border-radius: 8px;
     text-align: center;    
@@ -44,7 +44,7 @@ body {
 }
 
 .container p {
-    color:rgb(61, 132, 255);
+    color:#090714;
     margin-top: 100px;
     line-height: 2;
     font-size:x-large;
@@ -54,7 +54,7 @@ body {
 }
 
 .container h3 {
-    color: rgb(204, 164, 211);
+    color: rgb(243, 212, 248);
     margin: 10px 20px 0 10px;
     font-size: larger;
     text-transform: capitalize;
@@ -62,7 +62,7 @@ body {
 }
 
 .container button {
-    background-color: rgb(100, 151, 239);
+    background-color: #090714;
     margin: 80px 0 20px 0;
     border: none;
     padding: 15px 45px;
@@ -78,9 +78,9 @@ body {
     border: none;
     padding: 15px 40px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
-    color: rgb(80, 102, 230);
+    color: #090714;
     cursor: pointer;
     position: absolute;
     bottom: 80px;
