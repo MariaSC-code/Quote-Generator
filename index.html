@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script> 
-    <title>Motivational Quotes</title>
+    <link rel="stylesheet" href="/random.css">
+     
+    <title>Random Quotes Generator</title>
 </head>
 <body>
-
-    <div class="wrapper">
+        <!-- Container for the random quote -->
+    <div id="quote-container" class="wrapper">
         <div class="container">
+
+        <!-- Paragraph to display the quote -->
             <p id="quote">Quote</p>
+
+        <!-- Heading to display the author of the quote -->
             <h3 id="author">Authors</h3>
+
+        <!-- Button to generate a new random quote -->
             <button id="btn">Get Quote</button>
         </div>
     </div>
-
+    
+        <!-- Button to save the current quote -->
     <button id="saveBtn">Save Quote</button>
-       
+
+    <script defer src="/random.js"></script>  
 </body>
 </html>

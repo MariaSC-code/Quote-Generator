@@ -1,3 +1,4 @@
+/* General Settings */
 * {
     padding: 0;
     margin: 0;
@@ -5,65 +6,77 @@
     font-family: 'Times New Roman', Times, serif; 
 }
 
+/* Body Styles */
 body {
     background-color: #090714;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;    
+    background-size: cover;        
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
 }
 
+/* Wrapper Styles */
 .wrapper {
     width: 400px;
-    position: absolute;
+    height: 500px;
+    position: absolute;               
     transform: translate(-50%, -50%);
-    top: 40%;
-    left: 50%
+    top: 40%;                         
+    left: 50%                        
 }
-
-.container{
+/* Container Styles */
+.container {
     width: 400px;
+    height: 500px;                    
     background-color: #228b22;
     padding: 50px, 40px;
     box-shadow: 0 20px 65px #ff007f;
     position: relative;
     border-radius: 8px;
-    text-align: center;    
+    text-align: center;               
 }
 
+/* Pseudo Element for Container */
 .container:after {
     content: "";
     position: absolute;
-    width: 120%;
-    height: 80%;
-    background-color: rgb(211, 167, 230);
-    
+    width: 120%;                             
+    height: 80%;                             
+    background-color: rgb(211, 167, 230);    
     z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%;                                
+    left: 50%;                               
+    transform: translate(-50%, -50%);        
 }
 
+/* Quote Styles */
+#quote {
+    font-size: 21px;
+}
+
+/* Paragraph (Random Quote) Styles */
 .container p {
     color:#090714;
     margin-top: 100px;
     line-height: 2;
-    font-size:x-large;
+    font-size:x-large;                   
     font-weight: bold;
-    text-transform:capitalize;
-    padding: 70px;
+    padding: 50px;
 }
 
+/* Author Styles */
 .container h3 {
-    color: rgb(243, 212, 248);
+    color: rgb(243, 212, 248);     
     margin: 10px 20px 0 10px;
-    font-size: larger;
+    font-size: larger;               
     text-transform: capitalize;
-    text-align: right;
+    text-align: right;               
 }
 
+/* Button "Get Quote" Styles */
 .container button {
     background-color: #090714;
-    margin: 80px 0 20px 0;
+    margin: 0 auto; 
+    display: block; 
     border: none;
     padding: 15px 45px;
     border-radius: 5px;
@@ -71,8 +84,13 @@ body {
     font-weight: 600;
     color: rgb(255, 227, 254);
     cursor: pointer;
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
 }
 
+/* Save Button Styles */
 #saveBtn {
     background-color: rgb(212, 199, 247);
     border: none;
@@ -83,7 +101,102 @@ body {
     color: #090714;
     cursor: pointer;
     position: absolute;
-    bottom: 80px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* MEDIA QUERIES Responsive Design */
+
+/* Styles for 500px and below */
+@media screen and (max-width: 500px) {
+    .wrapper {
+        width: 90%;
+        height: auto;
+        max-width: 400px;
+        max-height: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container {
+        width: 90%;
+        padding: 30px 20px;
+        margin: 0 auto
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    .container p {
+        font-size: large;
+        padding: 0px;
+    }
+
+    .container h3 {
+        font-size: medium;
+    }
+
+    .container button {
+        padding: 12px 30px;
+        font-size: 16px;
+        margin: 0 auto; 
+        display: block; 
+        margin: 0;
+    }
+
+    #saveBtn {
+        padding: 12px 30px;
+        font-size: 16px;
+        bottom: 20px;
+    }
+}
+
+/* Styles for 300px and below */
+@media screen and (max-width: 300px) {
+    .wrapper {
+        width: 90%;
+        height: auto;
+        max-width: 300px;
+        max-height: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #quote {
+        font-size: 16px;
+    }
+
+    .container p {
+        font-size: medium;
+        padding-top: 0;
+        margin-top: 0;
+        
+    }
+
+    .container h3 {
+        font-size: small;
+    }
+
+    .container button {
+        padding: 10px 25px;
+        font-size: 14px;
+        margin: 0 auto; 
+        display: block;
+    }
+
+    #saveBtn {
+        padding: 10px 25px;
+        font-size: 14px;
+        bottom: 10px;
+    }
 }
