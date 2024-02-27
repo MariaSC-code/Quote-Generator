@@ -8,7 +8,7 @@
 
 /* Body Styles */
 body {
-    background-color: #090714;
+    background-color: #090715;
     background-size: cover;        
     background-repeat: no-repeat; 
     background-attachment: fixed;  
@@ -108,7 +108,7 @@ body {
 
 /* MEDIA QUERIES Responsive Design */
 
-/* Styles for 500px and below */
+/* Styles for 500px and below: */
 @media screen and (max-width: 500px) {
     .wrapper {
         width: 90%;
@@ -154,7 +154,7 @@ body {
     }
 }
 
-/* Styles for 300px and below */
+/* Styles for 300px and below: */
 @media screen and (max-width: 300px) {
     .wrapper {
         width: 90%;
